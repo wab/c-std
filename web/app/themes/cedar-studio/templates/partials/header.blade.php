@@ -1,10 +1,8 @@
-<header class="banner">
+<header class="mainheader">
   <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
+    <a class="brand" href="<?= esc_url(home_url('/')); ?>">
+      @include('partials.logo')
+    </a>
+    @include('partials.navigation')
   </div>
 </header>
