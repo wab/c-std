@@ -48,6 +48,19 @@ $banner-height: rem-calc(200);
     }
 
   }
+
+  .button {
+    @include button(
+      $expand: false,
+      $background: color(palette, pink),
+      $background-hover: darken(color(palette, pink), 15%),
+      $color: color(white),
+      $style: $button-fill
+    )
+    .large {
+      font-size: map-get($button-sizes, large);
+    }
+  }
 }
 
 .page-wrapper {

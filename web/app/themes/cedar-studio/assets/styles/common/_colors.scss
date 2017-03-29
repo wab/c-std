@@ -2,6 +2,8 @@
 $color-primary: #15afa6;
 // color variable map
 $colors: (
+  white: #fff,
+  black: #333,
   background: #fff,
   text: #333,
   primary: (
@@ -16,7 +18,8 @@ $colors: (
     green: #56aa4c,
     yellow: #f9b61c,
     red: #a3012b,
-    orange: #e96521
+    orange: #e96521,
+    pink: #c80d77,
   ),
   grey: (
     base: #162637,
