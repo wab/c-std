@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.7.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-02-06 09:51:22+0000\n"
+"PO-Revision-Date: 2017-03-10 12:42:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3747,7 +3747,7 @@ msgstr "Veuillez saisir un identifiant valide."
 
 #: wp-admin/includes/update-core.php:941
 msgid "Copying the required files&#8230;"
-msgstr "Copie des fichiers requis&#8230;"
+msgstr "Copie des fichiers nécessaires&#8230;"
 
 #: wp-admin/includes/update-core.php:879
 msgid "Preparing to install the latest version&#8230;"
@@ -4840,7 +4840,7 @@ msgstr "Personnaliser &laquo;&nbsp;%s&nbsp;&raquo;"
 #: wp-admin/user-new.php:409 wp-admin/user-new.php:429
 #: wp-admin/user-new.php:452
 msgid "(required)"
-msgstr "(obligatoire)"
+msgstr "(nécessaire)"
 
 #: wp-admin/link.php:104
 msgid "Edit Link"
@@ -6456,7 +6456,7 @@ msgstr "Ce thème enfant hérite de certains modèles de son thème parent, %s."
 
 #: wp-admin/upgrade.php:75
 msgid "No Update Required"
-msgstr "Aucune mise à jour requise"
+msgstr "Aucune mise à jour nécessaire"
 
 #: wp-admin/upgrade.php:97
 msgid "WordPress has been updated! Before we send you on your way, we have to update your database to the newest version."
@@ -6464,7 +6464,7 @@ msgstr "WordPress a été mis à jour&nbsp;! Avant de vous laisser continuer, no
 
 #: wp-admin/upgrade.php:96
 msgid "Database Update Required"
-msgstr "Mise à jour de la base de données requise"
+msgstr "Mise à jour de la base de données nécessaire"
 
 #: wp-admin/upgrade.php:109
 msgid "Update Complete"
@@ -6863,7 +6863,7 @@ msgstr "Pensez bien à cliquer sur le bouton &laquo;&nbsp;Mettre à jour le prof
 
 #: wp-admin/user-edit.php:44
 msgid "Required fields are indicated; the rest are optional. Profile information will only be displayed if your theme is set up to do so."
-msgstr "Les champs obligatoires sont indiqués, les autres sont facultatifs. Les informations du profil ne sont affichées que si votre thème a été conçu pour les exploiter."
+msgstr "Les champs nécessaires sont indiqués, les autres sont facultatifs. Les informations du profil ne sont affichées que si votre thème a été conçu pour les exploiter."
 
 #: wp-admin/user-edit.php:42
 msgid "Your username cannot be changed, but you can use other fields to enter your real name or a nickname, and change which name to display on your posts."
@@ -6938,7 +6938,7 @@ msgstr "Retour aux importateurs"
 
 #: wp-admin/edit-link-form.php:58
 msgid "You can add or edit links on this screen by entering information in each of the boxes. Only the link&#8217;s web address and name (the text you want to display on your site as the link) are required fields."
-msgstr "Vous pouvez ajouter ou modifier des liens sur cet écran, en saisissant dans chacun des blocs. Seuls sont obligatoires les champs &laquo;&nbsp;Adresse web&nbsp;&raquo; et &laquo;&nbsp;Nom&nbsp;&raquo; (le texte que vous voulez voir affiché sur votre site pour cette adresse)."
+msgstr "Vous pouvez ajouter ou modifier des liens sur cet écran, en saisissant dans chacun des blocs. Seuls sont nécessaires les champs &laquo;&nbsp;Adresse web&nbsp;&raquo; et &laquo;&nbsp;Nom&nbsp;&raquo; (le texte que vous voulez voir affiché sur votre site pour cette adresse)."
 
 #: wp-admin/edit-tags.php:545
 msgid "Categories can be selectively converted to tags using the <a href=\"%s\">category to tag converter</a>."
@@ -10347,15 +10347,15 @@ msgstr "Impossible de se connecter au serveur SSH2 %s"
 
 #: wp-admin/includes/class-wp-filesystem-ssh2.php:105
 msgid "SSH2 password is required"
-msgstr "Le mot de passe SSH2 est obligatoire"
+msgstr "Le mot de passe SSH2 est nécessaire"
 
 #: wp-admin/includes/class-wp-filesystem-ssh2.php:96
 msgid "SSH2 username is required"
-msgstr "L&rsquo;identifiant SSH2 est obligatoire"
+msgstr "L&rsquo;identifiant SSH2 est nécessaire"
 
 #: wp-admin/includes/class-wp-filesystem-ssh2.php:83
 msgid "SSH2 hostname is required"
-msgstr "Le nom de l&rsquo;hôte SSH2 est obligatoire"
+msgstr "Le nom de l&rsquo;hôte SSH2 est nécessaire"
 
 #: wp-admin/includes/class-wp-filesystem-ssh2.php:61
 msgid "The ssh2 PHP extension is not available"
@@ -10383,12 +10383,12 @@ msgstr "Le mot de passe FTP est nécessaire"
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:52
 #: wp-admin/includes/class-wp-filesystem-ftpsockets.php:51
 msgid "FTP username is required"
-msgstr "L&rsquo;identifiant FTP est obligatoire"
+msgstr "L&rsquo;identifiant FTP est nécessaire"
 
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:46
 #: wp-admin/includes/class-wp-filesystem-ftpsockets.php:45
 msgid "FTP hostname is required"
-msgstr "Le nom de l&rsquo;hôte FTP est obligatoire"
+msgstr "Le nom de l&rsquo;hôte FTP est nécessaire"
 
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:31
 msgid "The ftp PHP extension is not available"
