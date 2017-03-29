@@ -57,7 +57,7 @@ $banner-height: rem-calc(200);
       $color: color(white),
       $style: $button-fill
     )
-    .large {
+    &.large {
       font-size: map-get($button-sizes, large);
     }
   }
