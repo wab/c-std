@@ -1,10 +1,8 @@
 <?php if (is_front_page()): ?>
   <header class="page-header text-center banner">
     <div class="wrapper">
-      <h1 class="maintitle page--title"><?php the_field('main-title'); ?></h1>
-      <?php if (get_field('cta_link')): ?>
-        <a href="<?php the_field('cta_link'); ?>" class="button large focus"><?php if (get_field('cta_intitule')) {the_field('cta_intitule');} else {echo 'Créer mon projet' ;} ?></a>
-      <?php endif; ?>
+      <h1 class="maintitle page--title">@php(bloginfo('title'))<span class="tagline">@php(bloginfo('description'))</span></h1>
+      <a href="#" class="button large focus">Commander mon projet</a>
     </div>
   </header>
 

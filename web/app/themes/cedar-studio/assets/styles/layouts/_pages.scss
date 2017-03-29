@@ -1,8 +1,10 @@
 $banner-height: rem-calc(200);
 
 .banner {
-  background: url(../images/banner-bg.jpg) center;
+  position: relative;
+  background-image: url(../images/banner-bg.jpg);
   background-size: cover;
+  background-position: center;
   text-align: center;
   color: $white;
   min-height: $banner-height;
@@ -11,6 +13,21 @@ $banner-height: rem-calc(200);
   justify-content: center;
   align-items: center;
 
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.6);
+    z-index: 0;
+    @include position(0,0, auto, auto);
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
   .home & {
     background-image: url(../images/banner-home.jpg);
     min-height: 450px;
@@ -18,10 +35,19 @@ $banner-height: rem-calc(200);
 
   .maintitle {
     text-transform: uppercase;
-    max-width: 600px;
-    font-size: 2rem;
-  }
+    max-width: $global-width;
+    font-size: 2.4rem;
 
+    .tagline {
+      display: block;
+      font-size: .8em;
+    }
+
+   & + .button {
+      margin-top: $global-padding;
+    }
+
+  }
 }
 
 .page-wrapper {
