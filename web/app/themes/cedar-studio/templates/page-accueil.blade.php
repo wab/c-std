@@ -98,22 +98,6 @@
               </g>
             </svg>
             <h3 class="pros--title">Agent Immobilier</h3>
-            <ul class="no-bullet pros--items">
-
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                necessitatibus commodi quia
-              </li>
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                ipsa ea debitis inventore
-              </li>
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                Lorem ipsum dolor sit amet
-              </li>
-
-            </ul>
           </li>
           <li class="columns large-3 medium-6 pros--secteur scrollreveal">
             <svg class="pros--icon" viewBox="0 0 100 100">
@@ -125,22 +109,6 @@
               </g>
             </svg>
             <h3 class="pros--title">Promoteur immobilier</h3>
-            <ul class="no-bullet pros--items">
-
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                necessitatibus commodi quia
-              </li>
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                ipsa ea debitis inventore
-              </li>
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                Lorem ipsum dolor sit amet
-              </li>
-
-            </ul>
           </li>
           <li class="columns large-3 medium-6 pros--secteur scrollreveal">
             <svg class="pros--icon" viewBox="0 0 100 100">
@@ -169,20 +137,6 @@
               </g>
             </svg>
             <h3 class="pros--title">Constructeur maison</h3>
-            <ul class="no-bullet pros--items">
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                necessitatibus commodi quia
-              </li>
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                ipsa ea debitis inventore
-              </li>
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                Lorem ipsum dolor sit amet
-              </li>
-            </ul>
           </li>
           <li class="columns large-3 medium-6 pros--secteur scrollreveal">
             <svg class="pros--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -194,20 +148,6 @@
               </g>
             </svg>
             <h3 class="pros--title">Décorateur</h3>
-            <ul class="no-bullet pros--items">
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                necessitatibus commodi quia
-              </li>
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                ipsa ea debitis inventore
-              </li>
-              <li class="pros--item">
-                <svg class="icon-check"><use xlink:href="#icon-check"></use></svg>
-                Lorem ipsum dolor sit amet
-              </li>
-            </ul>
           </li>
         </ul>
       </div>
