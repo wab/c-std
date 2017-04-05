@@ -10,9 +10,9 @@
     @include('partials.content-page')
   @endwhile
 
-  @if( have_rows('sections') )
+  @if( have_rows('section') )
 
-    @while ( have_rows('sections') ) @php(the_row())
+    @while ( have_rows('section') ) @php(the_row())
     @php($image = get_sub_field('image'))
     <section class="page-section">
       <div class="row">
