@@ -148,8 +148,10 @@
 }
 
 .home-galerie {
-  background: url(../images/bg-gallery.svg);
-  background-size: cover;
+  background-image: url(../images/bg-gallery.svg);
+  background-size: 102%;
+  background-position: center;
+  background-repeat: no-repeat;
   color: $white;
 
   .section--title {
