@@ -145,7 +145,7 @@
     "wpackagist-plugin/google-sitemap-generator": "^4",
     "wpackagist-plugin/wordpress-seo": "^4",
     "wpackagist-plugin/breadcrumb-navxt": "^5",
-    "wpackagist-plugin/jetpack": "^4.6",
+    "wpackagist-plugin/jetpack": "^4.8",
     "wpackagist-plugin/vaultpress": "^1",
     "wpackagist-plugin/custom-post-type-ui": "^1.5",
     "johnpbloch/wordpress": "^4.7"
