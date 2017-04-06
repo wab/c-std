@@ -102,6 +102,10 @@ let webpackConfig = {
       'bower_components',
     ],
     enforceExtension: false,
+    alias: {
+      'masonry': 'masonry-layout',
+      'isotope': 'isotope-layout',
+    },
   },
   resolveLoader: {
     moduleExtensions: ['-loader'],
