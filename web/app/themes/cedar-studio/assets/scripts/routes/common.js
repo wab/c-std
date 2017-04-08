@@ -10,7 +10,7 @@ export default {
     const imagesElem =  $('img');
     imagesElem.addClass('invisible');
     Foundation.onImagesLoaded(imagesElem, () => {
-      imagesElem.addClass('invisible');
+      imagesElem.removeClass('invisible');
     });
 
     // navigation mobile
