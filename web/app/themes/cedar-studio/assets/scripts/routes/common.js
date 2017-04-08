@@ -1,4 +1,3 @@
-/* global */
 export default {
   init() {
     // JavaScript to be fired on all pages
@@ -6,6 +5,13 @@ export default {
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
     $(document).foundation();
+
+    // loader images
+    const imagesElem =  $('img');
+    imagesElem.addClass('invisible');
+    Foundation.onImagesLoaded(imagesElem, () => {
+      imagesElem.addClass('invisible');
+    });
 
     // navigation mobile
     $('.menu-link').click(() => {

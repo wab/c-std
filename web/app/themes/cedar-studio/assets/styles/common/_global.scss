@@ -10,6 +10,16 @@
   }
 }
 
+// images loading
+img.load {
+  opacity: 0;
+  transition: opacity 500ms linear;
+
+  &.loaded {
+    opacity: 1;
+  }
+}
+
 .wrap {
   background-color: $light-gray;
   background-image:
@@ -21,96 +31,6 @@
 
 .main {
   text-align: justify;
-}
-
-.section {
-  padding: ($global-padding * 2) 0;
-  position: relative;
-  z-index: 1;
-  background-color: $white;
-
-  > div {
-    position: relative;
-    z-index: 1;
-  }
-
-  &:not(:first-child) {
-
-    &:before {
-      content: '';
-      display: block;
-      width: 30px;
-      height: 24px;
-      position: absolute;
-      left: calc(50% - 15px);
-      top: 0;
-      @include background-triangle($light-gray);
-      background-repeat: no-repeat;
-      background-position: top center;
-      z-index: 2;
-    }
-
-
-    &:nth-child(odd) {
-
-      background-color: rgba($light-gray, 0.9);
-
-      &:before {
-        @include background-triangle($body-background);
-      }
-
-      &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url(../images/bg.svg);
-        background: url(../images/bg.svg), linear-gradient(to bottom, rgba(153,153,153,0) 25%,rgba(153,153,153,1) 100%);
-        background-size: cover;
-        z-index: 0;
-        opacity: .3;
-      }
-    }
-
-    &:nth-child(2) {
-      &:before {
-        @include background-triangle($body-background);
-      }
-    }
-
-  }
-
-  &.draw {
-    &:not(:first-child) {
-      &:after {
-        background-image: url("../images/bg-draw.png");
-        background-repeat: repeat;
-        background-size: auto;
-        opacity: 1;
-      }
-    }
-  }
-}
-
-%alternate {
-  @include flex-grid-row;
-  @include flex-align(justify, middle);
-
-  &-column {
-
-    @include flex-grid-column(12);
-    @include breakpoint(medium) {
-      @include flex-grid-column(6);
-    }
-
-    &--only {
-       @include breakpoint(medium) {
-        @include flex-grid-column(8);
-      }
-    }
-  }
 }
 
 .sidebar-primary .container {

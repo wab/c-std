@@ -7,16 +7,19 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
-    @include('partials.content-page')
+    <div class="section">
+      <div class="section-wrapper">
+        @include('partials.content-page')
+      </div>
+    </div>
   @endwhile
 
   @if( have_rows('section') )
 
     @while ( have_rows('section') ) @php(the_row())
     @php($image = get_sub_field('image'))
-    <section class="page-section">
-      <div class="row">
-        <div class="columns medium-8 medium-centered">
+    <section class="section">
+      <div class="section-wrapper">
           @if(!empty($image))
             @php
               // variables
@@ -29,13 +32,12 @@
               $size = 'medium';
               $thumb = $image['sizes'][ $size ];
             @endphp
-            <img src="{{$thumb}}" alt="{{$alt}}" class="page-section-thumb">
+            <img src="{{$thumb}}" alt="{{$alt}}" class="section-thumbnail">
           @endif
           <h2 class="page-section-title">@php(the_sub_field('title'))</h2>
           <div class="page-section-contenu">
-            @php(the_sub_field('entry'))
+            @php(the_sub_field('content'))
           </div>
-        </div>
       </div>
     </section>
     @endwhile
