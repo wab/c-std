@@ -6,7 +6,7 @@
   top: $top;
 }
 
-@mixin section-base($background: $white) {
+@mixin section-base($background: color(white)) {
   $padding: $global-padding * 2;
   background-color: $background;
   padding: $padding 0;
@@ -54,6 +54,28 @@
         margin-right: $-zf-bp-value;
       }
     }
+  }
+}
+
+@mixin section-title() {
+  color: map-get($foundation-palette, secondary);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    width: auto;
+    display: block;
+    padding: 1em;
+  }
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    flex: 1;
+    height: 2px;
+    background: currentColor;
   }
 }
 

@@ -72,7 +72,9 @@
 }
 
 .pros--secteur {
-  color: color(primary, base);
+  a {
+    color: inherit;
+  }
   text-align: center;
 
   &:nth-child(1) {
