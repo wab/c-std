@@ -67,7 +67,7 @@ $banner-height: rem-calc(200);
   @include section-base;
 
   &:nth-child(even) {
-    background: color(grey, light) url('images/background-section.jpg') no-repeat;
+    background: color(grey, light) url(../images/background-section.jpg) no-repeat;
   }
 
   &-wrapper {
