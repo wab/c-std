@@ -1,5 +1,5 @@
 <nav class="navigation">
-  <div class="menumobile hide-for-large">
+  <div class="menumobile">
     <span class="menu-circle"></span>
     <button class="menu-link">
       <span class="menu-icon">

@@ -4,7 +4,7 @@
   right: 1rem;
   top: 1rem;
   width: 46px;
-  @include hide-for(large);
+  @include hide-for(xlarge);
 
   .menu-link {
     cursor: pointer;
@@ -99,7 +99,7 @@
       text-transform: uppercase;
     }
   }
-  @include breakpoint(large) {
+  @include breakpoint(xlarge) {
     height: $header-height;
     @include flex-align(right, stretch);
 

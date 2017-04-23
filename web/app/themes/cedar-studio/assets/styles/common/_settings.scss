@@ -9,9 +9,6 @@ $header-height: rem-calc(80);
 
 $global-transition: 300ms ease;
 
-// Font Awesome | see: http://fontawesome.io/get-started/
-$fa-font-path:          '~font-awesome/fonts';
-
 // 1. Global
 // ---------
 
@@ -20,7 +17,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: color(primary, base),
-  secondary: #2b4d7e,
+  secondary: color(palette, blue),
   success: #3adb76,
   warning: #ffae00,
   alert: #cc0015,
