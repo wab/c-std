@@ -35,7 +35,6 @@
   }
 }
 
-
 .menu-icon {
   bottom: 1px;
   height: 14px;
@@ -133,6 +132,12 @@
           &:after {
             height: rem-calc(5);
           }
+        }
+      }
+
+      &.active a {
+        &:after {
+          height: rem-calc(5);
         }
       }
     }

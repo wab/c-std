@@ -20,6 +20,11 @@ img.load {
   }
 }
 
+.container {
+  max-width: $global-width;
+  margin: auto;
+}
+
 .wrap {
   background-color: $light-gray;
   background-image:
@@ -27,6 +32,7 @@ img.load {
       to right,
       $white, $light-gray
     );
+  @include clearfix;
 }
 
 .main {

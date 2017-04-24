@@ -1,3 +1,9 @@
+%nobullet {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 @mixin position($top: 0, $right: auto, $bottom: auto, $left: 0) {
   bottom: $bottom;
   left: $left;
@@ -57,8 +63,8 @@
   }
 }
 
-@mixin section-title() {
-  color: map-get($foundation-palette, secondary);
+@mixin section-title($color: $color-primary) {
+  color: $color;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;

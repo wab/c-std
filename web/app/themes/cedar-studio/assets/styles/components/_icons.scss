@@ -1,18 +1,19 @@
-[class^="icon-"], [class*="icon-"] {
+@mixin icon($size: 1em) {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: $size;
+  height: $size;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  vertical-align: -0.15em;
+}
+
+[class^="icon-"], [class*="icon-"] {
+  @include icon;
 }
 
 .picto--title {
-  display: inline-block;
-  height: 1.4em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  @include icon(1.4em);
 }
 
 /* ==========================================
