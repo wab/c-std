@@ -1,4 +1,5 @@
 $footer-gradient-size: rem-calc(5);
+$footer-color: color(palette, blue);
 
 .mainfooter {
   background-color: color(grey, base);
@@ -57,7 +58,7 @@ $footer-gradient-size: rem-calc(5);
   text-transform: uppercase;
 
   &:after {
-    background: $primary-color;
+    background: $footer-color;
     content: '';
     display: block;
     height: 2px;
@@ -83,7 +84,7 @@ $footer-gradient-size: rem-calc(5);
   position: relative;
 
   [class^="icon"]{
-    color: $primary-color;
+    color: $footer-color;
     height: 1.6em;
     margin-right: .3em;
     position: relative;
@@ -111,7 +112,7 @@ $footer-gradient-size: rem-calc(5);
       }
 
       .post-date {
-        color: $primary-color;
+        color: $footer-color;
         display: block;
         font-size: 1.5rem;
         font-weight: bold;
@@ -132,7 +133,7 @@ $footer-gradient-size: rem-calc(5);
   margin: 0 0.1em;
 }
 .reseaux--link {
-  background: $primary-color;
+  background: $footer-color;
   border-radius: 50%;
   color: inherit;
   display: inline-block;
@@ -142,7 +143,7 @@ $footer-gradient-size: rem-calc(5);
   transition: all 200ms ease;
 
   &:hover, &:focus {
-    background: darken($primary-color, 10%);
+    background: darken($footer-color, 10%);
     color: $white;
   }
 

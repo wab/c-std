@@ -4,7 +4,7 @@
       <p class="widget--title"><?php bloginfo('title'); ?></p>
       <nav class="nav-footer scrollreveal">
         <ul class="no-bullet nav-footer--menu">
-          <li>item</li>
+          <li class="nav-footer--item"><svg class="icon icon-info"><use xlink:href="#icon-info" /></svg><a href="@php(the_permalink(1704))">Qui sommes-nous ?</a></li>
         </ul>
       </nav>
     </div>
@@ -54,13 +54,15 @@
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://plus.google.com/118015676047486854511')"><svg class="icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></button></li>
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://www.youtube.com/user/MrMySketcher')"><svg class="icon-youtube-play"><use xlink:href="#icon-youtube-play"></use></svg></button></li>
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://fr.pinterest.com/mysketcher/')"><svg class="icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://fr.pinterest.com/mysketcher/')"><svg class="icon-instagram"><use xlink:href="#icon-instagram"></use></svg></button></li>
+      </ul>
       </ul>
     </div>
   </div>
   <div class="ours text-center">
     <div class="row column">
       <div class="scrollreveal">
-         Cedreo Interactive
+        <a href="@php(the_permalink(1702))">Mentions légales</a> - &copy; {{date('Y')}} Cedar Studio
       </div>
     </div>
   </div>
