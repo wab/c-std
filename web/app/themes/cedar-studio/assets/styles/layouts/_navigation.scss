@@ -50,6 +50,7 @@
   @extend .no-bullet;
   margin-bottom: 0;
   @include flex;
+  // Version mobile
   @include breakpoint(large down) {
     align-items: center;
     background-color: color(palette, purple);
@@ -98,7 +99,9 @@
       text-transform: uppercase;
     }
   }
+  // Version desktop
   @include breakpoint(xlarge) {
+    border-right: 1px solid rgba(255,255,255,0.8);
     height: $header-height;
     @include flex-align(right, stretch);
 
@@ -136,16 +139,29 @@
       }
 
       &.active a {
+
         &:after {
           height: rem-calc(5);
         }
       }
+
+      &.menu-accueil a {
+        font-size: rem-calc(24);
+      }
+
+      &.menu-acces-client a {
+        color: $primary-color;
+        font-weight: bold;
+        text-align: center;
+
+        .icon {
+          font-size: rem-calc(24);
+          top: 10px;
+          @include horizontal-center;
+        }
+      }
     }
   }
-}
-
-.menu-overlay a {
-
 }
 
 .menu-line {

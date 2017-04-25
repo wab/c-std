@@ -10,6 +10,6 @@
     </button>
   </div>
     @if (has_nav_menu('primary_navigation'))
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'navigation-menu']) !!}
+      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'items_wrap' => App\nav_menu_wrap(),  'menu_class' => 'navigation-menu']) !!}
     @endif
 </nav>
