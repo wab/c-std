@@ -1,0 +1,14 @@
+.contact--address {
+  color: $primary-color;
+}
+.contact--phone {
+  color: color(palette, pink);
+}
+
+.contact--opening {
+  color: color(palette, blue);
+}
+
+#map {
+  height: rem-calc(500);
+}
