@@ -162,4 +162,11 @@
   .section--title {
     color: inherit;
   }
+
+  .button {
+    font-size: map-get($button-sizes, large);
+    @include button-base;
+    @include button-hollow;
+    @include button-hollow-style(color(white));
+  }
 }

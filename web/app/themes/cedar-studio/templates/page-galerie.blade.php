@@ -12,8 +12,12 @@
     'taxonomy' => 'gallerytag'
     ));
 @endphp
+
 @extends('layouts.base')
+
 @section('content')
+@include('partials.page-header')
+
   <div class="page-wrapper">
 
     <div class="columns">

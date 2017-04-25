@@ -1,15 +1,11 @@
 .gallery--filters {
-
-//  @include button-group-stack('.gallery--filter');
-
-  @include breakpoint(medium) {
-    ///@include button-group-expand('.gallery--filter');
-  }
+  margin: $global-padding 0;
 }
 
 .gallery--filter {
-  @include button(false, $body-font-color, darken($body-font-color, 10%), $white, hollow);
+
   font-size: .8rem;
+  @include button(false, $body-font-color, darken($body-font-color, 10%), $white, hollow);
   &.is-checked {
     @include button(false, $primary-color, $primary-color, $white, solid);
     font-size: .8rem;

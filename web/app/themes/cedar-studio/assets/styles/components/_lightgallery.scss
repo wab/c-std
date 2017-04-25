@@ -1,12 +1,12 @@
 // Core variables and mixins
 @import "~lightgallery/src/sass/lg-variables";
 // paths
-$lg-path-fonts: '../fonts';
+$lg-path-fonts: 'fonts';
 $lg-path-images: '../images/lg';
 $backdrop-opacity: .99;
 
 @import "~lightgallery/src/sass/lg-mixins";
-// @import "~lightgallery/src/sass/lg-fonts";
+@import "~lightgallery/src/sass/lg-fonts";
 @import "~lightgallery/src/sass/lg-theme-default";
 // @import "~lightgallery/src/sass/lg-thumbnail";
 // @import "~lightgallery/src/sass/lg-video";
