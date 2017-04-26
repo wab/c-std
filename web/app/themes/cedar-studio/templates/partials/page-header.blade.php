@@ -1,8 +1,8 @@
 @if (is_front_page())
   <header class="page-header text-center banner">
     <div class="wrapper">
-      <h1 class="maintitle page--title">@php(bloginfo('title'))<span class="tagline">@php(bloginfo('description'))</span></h1>
-      <a href="#" class="button large focus">Commander mon projet</a>
+      <h1 class="maintitle page--title">{{get_field( "banner_title", 8 )}}<span class="tagline">{{get_field( "banner_tagline", 8 )}}</span></h1>
+      <a href="{{get_field( "banner_url", 8 )}}" class="button large focus">Commander mon projet</a>
     </div>
   </header>
 @elseif (is_single() )
