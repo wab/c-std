@@ -47,7 +47,7 @@ $footer-color: color(palette, blue);
   .widget {
     @include grid-column;
     @include breakpoint(medium) {
-      @include grid-column-size(3);
+      @include grid-column-size(4);
     }
   }
 }

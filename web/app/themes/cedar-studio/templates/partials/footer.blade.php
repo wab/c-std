@@ -11,7 +11,7 @@
     </div>
 
     <div class="widget">
-      <p class="widget--title"><?php _e('Recent posts', 'cedar-studio'); ?></p>
+      <p class="widget--title">Articles récents</p>
       <?php
       // the query
       $lastposts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => '2') ); ?>
@@ -43,12 +43,9 @@
       <?php endif; ?>
 
     </div>
-    <div class="widget">
-      <p class="widget--title"><?php _e('Recent tweets', 'cedar-studio'); ?></p>
-    </div>
 
     <div class="widget">
-      <p class="widget--title"><?php _e('Follow us', 'cedar-studio'); ?></p>
+      <p class="widget--title">Suivez-nous</p>
       <ul class="reseaux--list no-bullet scrollreveal">
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://twitter.com/mysketcher')"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg></button></li>
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://www.facebook.com/My-Sketcher-1548463242070456')"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg></button></li>
