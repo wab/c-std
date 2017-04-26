@@ -77,5 +77,20 @@ $banner-height: rem-calc(200);
   &--title {
     @include section-title;
   }
+
+  &-main {
+    h2 {
+      text-align: left;
+      @include section-title($border: false);
+    }
+  }
+}
+
+.page {
+  &-section {
+    &-title {
+      @include section-title(color(palette, purple), $border: false);
+    }
+  }
 }
 

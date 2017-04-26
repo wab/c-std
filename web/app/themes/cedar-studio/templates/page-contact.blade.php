@@ -60,10 +60,12 @@
     </div>
   </div>
   <section class="section">
-    <div class="container">
-      <h2 class="section--title scrollreveal"><span>Contactez-nous</span></h2>
-      <div class="scrollreveal">
-        @php(the_content())
+    <div class="row">
+      <div class="column large-6 medium-8 medium-centered">
+        <h2 class="section--title scrollreveal"><span>Contactez-nous</span></h2>
+        <div class="scrollreveal">
+          @php(the_content())
+        </div>
       </div>
     </div>
   </section>

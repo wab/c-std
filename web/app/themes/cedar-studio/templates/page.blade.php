@@ -5,7 +5,7 @@
     @include('partials.page-header')
     <div class="section">
       <div class="row">
-        <div class="columns large-8 large-centered">
+        <div class="columns large-6 medium-6 medium-centered">
           @include('partials.content-page')
         </div>
       </div>

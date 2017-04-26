@@ -68,7 +68,11 @@
     <section class="section booster">
       <div class="row">
         <div class="column medium-6">
+        @if(has_post_thumbnail())
+          @php(the_post_thumbnail('large'))
+        @else
           <img src="@asset('images/accelerez.jpg')" alt="">
+        @endif
         </div>
         <div class="column medium-6">
           <h2 class="section--title scrollreveal">
@@ -76,9 +80,7 @@
             <path d="M59 53V14H47v39h-3V22H32v31h-3V30H17v23h-3V39H2v14H1c-.6 0-1 .4-1 1s.4 1 1 1h58c.6 0 1-.4 1-1s-.4-1-1-1M4 41h8v12H4V41zm15-9h8v21h-8V32zm15-8h8v29h-8V24zm15-8h8v37h-8V16zM8 25.3c.2 0 .3 0 .5-.1L44.8 4.3l-2.3 5c-.2.5 0 1.1.5 1.3.1.1.3.1.4.1.4 0 .7-.2.9-.6l3.6-7.8v-1l-.1-.1s0-.1-.1-.1l-.1-.1-.1-.1s-.1 0-.1-.1H47L38.5 0c-.6-.1-1 .3-1.1.9-.1.5.3 1 .9 1.1l5.5.5-36.3 21c-.5.3-.6.9-.4 1.4.2.3.6.4.9.4"></path></svg>
             <span>Accélérez</span>
           </h2>
-          <p>Cedar Studio vous permet de projeter vos prospects dans leur future acquisition avec des  plans 3D,  du home staging virtuel  et des  visites virtuelles  au meilleur qualité / prix / délai du marché. <br>
-          En 48h seulement et en nous envoyant un minimum de consignes, nous nous occupons de tout et vous envoyons à un tarif imbattable les outils qui vous permettront de vendre mieux et plus rapidement. <br>
-          Nos offres sont  sans engagement  et sont certainement le meilleur investissement que vous puissiez faire avec la diffusion de vos annonces </p>
+          @php(the_content())
         </div>
       </div>
     </section>
@@ -145,7 +147,7 @@
             </a>
           </li>
           <li class="columns large-3 medium-6 pros--secteur scrollreveal">
-            <a href="#">
+            <a href="{{ get_permalink(1709) }}">
               <svg class="pros--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <circle class="bg" opacity=".2" cx="50" cy="50" r="50"/>
                 <circle class="bg" opacity=".6" cx="50" cy="50" r="44"/>
@@ -160,6 +162,8 @@
         </ul>
       </div>
     </div>
+
+    @include('partials/sections')
 
     <section class="home-galerie">
       <div class="row column">

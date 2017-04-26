@@ -41,7 +41,6 @@
     display: block;
     margin: 0;
     margin-bottom: $margin;
-
     @include breakpoint(large) {
       float: right;
       width: grid-column(6);
@@ -63,25 +62,31 @@
   }
 }
 
-@mixin section-title($color: $color-primary) {
-  color: $color;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
+@mixin section-title($color: $color-primary, $font-size: rem-calc(30), $border: true) {
   align-items: center;
+  color: $color;
+  display: flex;
+  font-size: $font-size;
+  justify-content: space-between;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 500;
 
-  span {
-    width: auto;
-    display: block;
-    padding: 1em;
-  }
+  @if $border {
 
-  &:before, &:after {
-    content: '';
-    display: block;
-    flex: 1;
-    height: 2px;
-    background: currentColor;
+    span {
+      display: block;
+      padding: 1em;
+      width: auto;
+    }
+
+    &:before, &:after {
+      background: currentColor;
+      content: '';
+      display: block;
+      flex: 1;
+      height: 2px;
+    }
   }
 }
 
