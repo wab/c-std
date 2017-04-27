@@ -1,12 +1,55 @@
-.contact--address {
-  color: $primary-color;
-}
-.contact--phone {
-  color: color(palette, pink);
-}
+.contact {
+  &-infos {
+    font-size: rem-calc(18);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-.contact--opening {
-  color: color(palette, blue);
+  &--quote {
+    color: color(palette, purple);
+  }
+
+  &--phone {
+    color: $primary-color;
+  }
+
+  &--opening {
+    color: color(palette, green);
+    text-transform: uppercase;
+  }
+
+  @include breakpoint(large) {
+    .nf-form-content {
+      position: relative;
+      @include grid-row(nested);
+    }
+
+    .nf-field-container {
+      margin-bottom: rem-calc(10);
+      @include grid-column(6);
+    }
+
+    .field-message {
+      @include position(0, 0, auto, auto);
+      .nf-field-element textarea {
+        height: rem-calc(450);
+      }
+    }
+
+    .submit-container {
+      margin-left: grid-col(6);
+    }
+  }
+
+  .input-submit {
+    @include button(
+      $expand: false,
+      $background: color(primary, base),
+      $background-hover: color(primary, dark),
+      $color: color(white),
+      $style: solid
+    )
+  }
 }
 
 #map {
