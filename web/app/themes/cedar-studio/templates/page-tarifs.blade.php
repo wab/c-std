@@ -106,15 +106,13 @@
 
       <div class="section-price">
         <div class="mentions">
-          <p>* 1 pièce = 1 fonction = dans la limite de 40m2 hors WC, dégagements et couloirs, extérieur = dans la limite de 500m2 / ambiance prédéfinie au choix</p>
-          <p>** Aménagements particuliers hors ambiances prédéfinies</p>
-          <p>Minimum de commande de 3 pièces/projet  images livrées en Full HD (1920*1080 Pixels)
-          (Tous les prix affichés sont en HT)</p>
-          <p><a class="button download-btn" href="#">Téléchargez le bon de commande</a></p>
+          @php(the_content())
+          @if(get_field('pdf'))
+            <p><a class="button download-btn" href="@php(the_field('pdf'))">Téléchargez le bon de commande</a></p>
+          @endif
         </div>
       </div>
 
-      @include('partials.content-page')
     </div>
 
   @endwhile
