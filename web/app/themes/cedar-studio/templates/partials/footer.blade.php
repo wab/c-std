@@ -47,12 +47,12 @@
     <div class="widget">
       <p class="widget--title">Suivez-nous</p>
       <ul class="reseaux--list no-bullet scrollreveal">
-        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://twitter.com/mysketcher')"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg></button></li>
-        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://www.facebook.com/My-Sketcher-1548463242070456')"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg></button></li>
-        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://plus.google.com/118015676047486854511')"><svg class="icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></button></li>
-        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://www.youtube.com/user/MrMySketcher')"><svg class="icon-youtube-play"><use xlink:href="#icon-youtube-play"></use></svg></button></li>
-        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://fr.pinterest.com/mysketcher/')"><svg class="icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg></button></li>
-        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://fr.pinterest.com/mysketcher/')"><svg class="icon-instagram"><use xlink:href="#icon-instagram"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('hhttps://fr-fr.facebook.com/cedarstudio/')"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://www.instagram.com/cedarstudio3d/?hl=fr')"><svg class="icon-instagram"><use xlink:href="#icon-instagram"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://twitter.com/CedarStudio3D')"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://www.pinterest.com/cedar_studio/')"><svg class="icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.open('https://www.linkedin.com/company-beta/10038563/')"><svg class="icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link"><svg class="icon-youtube-play"><use xlink:href="#icon-youtube-play"></use></svg></button></li>
       </ul>
       </ul>
     </div>
