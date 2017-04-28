@@ -106,7 +106,7 @@
         scrollwheel: false,
       });
 
-      const icon = '{{ get_template_directory_uri() }}/marker.png';
+      const icon = '{{ get_template_directory_uri() }}/dist/images/marker.png';
 
       const marker = new google.maps.Marker({
         position: myLatLng,
