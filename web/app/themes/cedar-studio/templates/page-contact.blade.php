@@ -1,8 +1,6 @@
-<?php
-/**
- * Template Name: Page contact
- */
-?>
+{{--
+  Template Name: Custom Template
+--}}
 
 @extends('layouts.base')
 @section('content')
@@ -106,7 +104,7 @@
         scrollwheel: false,
       });
 
-      const icon = '{{ get_template_directory_uri() }}/dist/images/marker.png';
+      const icon = "@asset('images/marker.png')";
 
       const marker = new google.maps.Marker({
         position: myLatLng,
