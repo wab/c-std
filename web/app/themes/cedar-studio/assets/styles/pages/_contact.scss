@@ -18,27 +18,20 @@
     text-transform: uppercase;
   }
 
-  @include breakpoint(large) {
-    .nf-form-content {
-      position: relative;
-      @include grid-row(nested);
-    }
+  textarea {
 
-    .nf-field-container {
-      margin-bottom: rem-calc(10);
-      @include grid-column(6);
-    }
+    height: rem-calc(450);
+    @include position;
+  }
 
-    .field-message {
-      @include position(0, 0, auto, auto);
-      .nf-field-element textarea {
-        height: rem-calc(450);
-      }
-    }
-
-    .submit-container {
-      margin-left: grid-col(6);
-    }
+  .fileinput-button {
+    @include button(
+      $expand: false,
+      $background: color(palette, purple),
+      $background-hover: color(palette, purple),
+      $color: color(white),
+      $style: hollow
+    )
   }
 
   .input-submit {

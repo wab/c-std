@@ -80,9 +80,13 @@ $banner-height: rem-calc(200);
 
   &-main {
     h2 {
-      text-align: left;
       @include section-title($border: false);
     }
+  }
+
+  h2 {
+    text-align: left;
+    @include section-title($border: false);
   }
 }
 

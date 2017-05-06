@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.7.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-04-26 14:04:42+0000\n"
+"PO-Revision-Date: 2017-05-05 12:09:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4985,10 +4985,6 @@ msgctxt "Cancel reordering widgets in Customizer"
 msgid "Done"
 msgstr "Terminé"
 
-#: wp-includes/class-wp-customize-widgets.php:729
-msgid "Save and preview changes before publishing them."
-msgstr "Enregistrer les modifications et les prévisualiser avant de les publier"
-
 #: wp-includes/class-wp-editor.php:833
 msgctxt "TinyMCE"
 msgid "Headings"
@@ -5014,6 +5010,10 @@ msgstr "Mettez le widget à la corbeille en le déplaçant vers la colonne laté
 #: wp-includes/customize/class-wp-customize-header-image-control.php:108
 msgid "Set image"
 msgstr "Définir l’image"
+
+#: wp-includes/class-wp-customize-widgets.php:729
+msgid "Save and preview changes before publishing them."
+msgstr "Enregistrer les modifications et les prévisualiser avant de les publier."
 
 #: wp-includes/media-template.php:1081 wp-includes/media-template.php:1170
 msgctxt "auto preload"
@@ -9982,11 +9982,6 @@ msgstr "Pages&nbsp;:"
 msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> des commentaires"
 
-#: wp-includes/class-walker-comment.php:284
-#: wp-includes/class-walker-comment.php:354
-msgid "Your comment is awaiting moderation."
-msgstr "Votre commentaire est en attente de modération"
-
 #. translators: 1: comment date, 2: comment time
 #: wp-includes/class-walker-comment.php:291
 #: wp-includes/class-walker-comment.php:346
@@ -10117,6 +10112,11 @@ msgstr "Adresse de messagerie"
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:473
 msgid "Sorry, comments are closed for this item."
 msgstr "Les commentaires sont fermés pour cet article."
+
+#: wp-includes/class-walker-comment.php:284
+#: wp-includes/class-walker-comment.php:354
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
 
 #: wp-includes/class-wp-editor.php:906 wp-includes/theme-compat/sidebar.php:27
 msgid "Author"
