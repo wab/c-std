@@ -27,13 +27,8 @@
 
 @mixin section-wrapper() {
   $margin: $global-padding;
-  margin: auto;
-  width: grid-column(10);
-  @include clearfix;
-  @include -zf-breakpoint-value($map: $grid-column-gutter) {
-    padding-left: $-zf-bp-value;
-    padding-right: $-zf-bp-value;
-  }
+
+  @include grid-column-row;
 
   .section-thumbnail {
     background: $white;

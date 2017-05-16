@@ -29,7 +29,7 @@ $banner-height: rem-calc(200);
   }
 
   .home & {
-    background-image: url(../images/banner-home.jpg);
+    //background-image: url(../images/banner-home.jpg);
     min-height: 450px;
   }
 
@@ -68,6 +68,7 @@ $banner-height: rem-calc(200);
 
   &:nth-child(even) {
     background: color(grey, light) url(../images/background-section.jpg) no-repeat;
+    background-size: 100%;
   }
 
   &-wrapper {
