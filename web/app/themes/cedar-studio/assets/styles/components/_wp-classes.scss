@@ -10,22 +10,22 @@
 }
 .aligncenter {
   display: block;
-  margin: ($global-spacing / 2) auto;
+  margin: $global-padding auto;
   height: auto;
 }
 .alignleft,
 .alignright {
-  margin-bottom: ($global-spacing / 2);
+  margin-bottom: $global-padding;
   height: auto;
 }
 @include breakpoint(medium) {
   // Only float if not on an extra small device
   .alignleft {
     float: left;
-    margin-right: ($global-spacing / 2);
+    margin-right: $global-padding;
   }
   .alignright {
     float: right;
-    margin-left: ($global-spacing / 2);
+    margin-left: $global-padding;
   }
 }
