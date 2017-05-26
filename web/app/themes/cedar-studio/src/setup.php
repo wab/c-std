@@ -57,7 +57,7 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('post-thumbnails');
 
-    add_image_size( 'gallery', 350, 500);
+    add_image_size( 'gallery', 500, 500);
 
     /**
      * Enable HTML5 markup support
