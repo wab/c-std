@@ -44,9 +44,9 @@
   @include breakpoint(large) {
     @include grid-col-size(6);
     @if $position == right {
-      order: 2;
-    } @else {
       order: 0;
+    } @else {
+      order: 2;
     }
   }
 
