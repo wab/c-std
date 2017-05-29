@@ -83,14 +83,16 @@ $banner-height: rem-calc(200);
     }
   }
 
-  &-thumbnail {
-    img {
-      margin-bottom: 0;
-    }
-  }
-
   &-wrapper {
     @include section-wrapper;
+
+    .entry-content {
+      @include grid-column-row;
+
+      h2 {
+        font-weight: bold;
+      }
+    }
   }
 
   &-contenu {

@@ -60,7 +60,7 @@
   color: $color;
   display: flex;
   font-size: $font-size;
-  justify-content: space-between;
+
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 500;
@@ -68,19 +68,23 @@
 
   @if $border {
 
-    span {
-      display: block;
-      padding: 1em;
-      width: auto;
+    @include breakpoint(large) {
+      justify-content: space-between;
+      span {
+        display: block;
+        padding: 1em;
+        width: auto;
+      }
+
+      &:before, &:after {
+        background: currentColor;
+        content: '';
+        display: block;
+        flex: 1;
+        height: 2px;
+      }
     }
 
-    &:before, &:after {
-      background: currentColor;
-      content: '';
-      display: block;
-      flex: 1;
-      height: 2px;
-    }
   }
 }
 
