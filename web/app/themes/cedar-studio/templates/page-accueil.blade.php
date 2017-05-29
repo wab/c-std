@@ -165,7 +165,7 @@
       </div>
     </div>
 
-    @include('partials/sections')
+    @include('partials.sections')
 
     <section class="home-galerie">
       <div class="row column">

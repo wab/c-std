@@ -13,7 +13,7 @@
             $caption = $image['caption'];
 
             // thumbnail
-            $size = 'medium';
+            $size = 'large';
             $thumb = $image['sizes'][ $size ];
           @endphp
           <img src="{{$thumb}}" alt="{{$alt}}" class="section-thumbnail">
