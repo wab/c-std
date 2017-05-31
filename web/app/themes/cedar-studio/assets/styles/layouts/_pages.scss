@@ -1,5 +1,11 @@
 $banner-height: rem-calc(200);
 
+$banner-fontsize: (
+  small: rem-calc(24),
+  medium: rem-calc(28),
+  large: rem-calc(40)
+);
+
 .banner {
   position: relative;
   background-image: url(../images/banner-bg.jpg);
@@ -29,18 +35,21 @@ $banner-height: rem-calc(200);
   }
 
   .home & {
-    //background-image: url(../images/banner-home.jpg);
     min-height: 450px;
   }
 
   .maintitle {
     text-transform: uppercase;
     max-width: $global-width;
-    font-size: 2.4rem;
+
+    @include -zf-breakpoint-value($map: $banner-fontsize) {
+      font-size: $-zf-bp-value;
+    }
 
     .tagline {
       display: block;
       font-size: .8em;
+      text-transform: lowercase;
     }
 
    & + .button {
@@ -58,7 +67,9 @@ $banner-height: rem-calc(200);
       $style: $button-fill
     )
     &.large {
-      font-size: map-get($button-sizes, large);
+      @include breakpoint(large) {
+        font-size: map-get($button-sizes, large);
+      }
     }
   }
 }
@@ -105,7 +116,7 @@ $banner-height: rem-calc(200);
 
   &-title {
     @include grid-column-row;
-    @include section-title($border: true, $font-size: 1.4em);
+    @include section-title($border: true);
   }
 
 }

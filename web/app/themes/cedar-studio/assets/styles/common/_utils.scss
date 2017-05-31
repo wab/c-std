@@ -1,3 +1,9 @@
+$section-title-fontsize: (
+  small: rem-calc(18),
+  medium: rem-calc(24),
+  large: rem-calc(28)
+);
+
 %nobullet {
   list-style-type: none;
   margin: 0;
@@ -58,24 +64,37 @@
   }
 }
 
-@mixin section-title($color: $color-primary, $font-size: rem-calc(30), $border: true) {
+@mixin section-title($color: $color-primary, $border: true) {
   color: $color;
   display: flex;
-  font-size: $font-size;
-  line-height: 1.2;
+  line-height: 1.3;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: $global-padding;
-  @include flex-align(center, middle);
+  @include flex-align(left, middle);
+
   svg {
-    margin-left: 1em;
+    margin-right: 1em;
   }
-  span {
-    display: block;
-    padding: 0 1em;
-    width: auto;
+
+  @include -zf-breakpoint-value($map: $section-title-fontsize) {
+    font-size: $-zf-bp-value;
   }
+
   @include breakpoint(large) {
+
+    @include flex-align(center, middle);
+
+    span {
+      display: block;
+      padding: 0 1em;
+      width: auto;
+    }
+
+    svg {
+      margin: 0 0 0 1em;
+    }
+
     @if $border {
 
       &:before, &:after {
@@ -86,7 +105,6 @@
         height: 2px;
       }
     }
-
   }
 }
 
