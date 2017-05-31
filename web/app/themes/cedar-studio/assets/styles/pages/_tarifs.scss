@@ -3,6 +3,8 @@ $price-gutter: $global-padding / 2;
 .section-price {
   text-align: center;
 
+  @include section-base($background: transparent, $padding: 1rem);
+
   &-title {
     font-size: rem-calc(36);
     font-weight: bold;

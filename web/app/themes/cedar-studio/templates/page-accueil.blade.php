@@ -12,8 +12,7 @@
 
     <section class="marketing">
       <div class="row column">
-        <h2 class="section--title scrollreveal"><span>Marketing Immobilier</span></h2>
-
+        <h2 class="section-title"><span>Marketing Immobilier</span></h2>
         <nav class="no-bullet accesdirect--items">
           <a class="accesdirect--button plan" href="{{ get_permalink(1630) }}">
             <svg class="picto" viewBox="0 0 48 49">
@@ -67,21 +66,21 @@
 
     <section class="section booster">
       <div class="section-wrapper">
+        <h2 class="section-title">
+          <svg class="picto--title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55">
+          <path d="M59 53V14H47v39h-3V22H32v31h-3V30H17v23h-3V39H2v14H1c-.6 0-1 .4-1 1s.4 1 1 1h58c.6 0 1-.4 1-1s-.4-1-1-1M4 41h8v12H4V41zm15-9h8v21h-8V32zm15-8h8v29h-8V24zm15-8h8v37h-8V16zM8 25.3c.2 0 .3 0 .5-.1L44.8 4.3l-2.3 5c-.2.5 0 1.1.5 1.3.1.1.3.1.4.1.4 0 .7-.2.9-.6l3.6-7.8v-1l-.1-.1s0-.1-.1-.1l-.1-.1-.1-.1s-.1 0-.1-.1H47L38.5 0c-.6-.1-1 .3-1.1.9-.1.5.3 1 .9 1.1l5.5.5-36.3 21c-.5.3-.6.9-.4 1.4.2.3.6.4.9.4"></path></svg>
+          <span>Accélérez</span>
+        </h2>
         <div class="section-thumbnail">
-        @if(get_field('video'))
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/{{get_field('video')}}?rel=0" frameborder="0" allowfullscreen></iframe>
-        @elseif(has_post_thumbnail())
-          @php(the_post_thumbnail('large'))
-        @else
-          <img src="@asset('images/accelerez.jpg')" alt="">
-        @endif
+          @if(get_field('video'))
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{get_field('video')}}?rel=0" frameborder="0" allowfullscreen></iframe>
+          @elseif(has_post_thumbnail())
+            @php(the_post_thumbnail('large'))
+          @else
+            <img src="@asset('images/accelerez.jpg')" alt="">
+          @endif
         </div>
-        <div class="section-contenu">
-          <h2 class="section--title">
-            <svg class="picto--title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55">
-            <path d="M59 53V14H47v39h-3V22H32v31h-3V30H17v23h-3V39H2v14H1c-.6 0-1 .4-1 1s.4 1 1 1h58c.6 0 1-.4 1-1s-.4-1-1-1M4 41h8v12H4V41zm15-9h8v21h-8V32zm15-8h8v29h-8V24zm15-8h8v37h-8V16zM8 25.3c.2 0 .3 0 .5-.1L44.8 4.3l-2.3 5c-.2.5 0 1.1.5 1.3.1.1.3.1.4.1.4 0 .7-.2.9-.6l3.6-7.8v-1l-.1-.1s0-.1-.1-.1l-.1-.1-.1-.1s-.1 0-.1-.1H47L38.5 0c-.6-.1-1 .3-1.1.9-.1.5.3 1 .9 1.1l5.5.5-36.3 21c-.5.3-.6.9-.4 1.4.2.3.6.4.9.4"></path></svg>
-            <span>Accélérez</span>
-          </h2>
+        <div class="section-contenu section-contenu--with-thumbnail">
           @php(the_content())
         </div>
       </div>
@@ -188,7 +187,7 @@
 
             @while ( $gallery->have_posts() ) @php($gallery->the_post())
             @php($image = get_field('image'))
-              <li class="columns large-4"><img class="gallery--item--thumb" src={{ $image['sizes']['gallery'] }} alt={{$image['alt']}} /></li>
+              <li class="columns large-4"><img class="gallery--item--thumb" src={{ $image['sizes']['large'] }} alt={{$image['alt']}} /></li>
             @endwhile
 
           </ul>

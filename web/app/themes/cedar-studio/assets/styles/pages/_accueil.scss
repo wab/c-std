@@ -1,21 +1,22 @@
 .marketing {
   background-color: color(white);
+  @include section-base($padding: $global-padding);
 }
 .accesdirect--items {
   @extend .no-bullet;
-  margin-bottom: $global-margin;
+  flex-wrap: wrap;
   @include flex;
   @include flex-align(spaced, middle);
+  @include breakpoint(large) {
+
+    .chevron {
+      display: block;
+    }
+  }
 
   .chevron {
     @extend %chevron;
     display: none;
-  }
-
-  @include breakpoint(medium) {
-    .chevron {
-      display: block;
-    }
   }
 }
 
@@ -26,6 +27,7 @@
   flex-basis: 180px;
   flex-direction: column;
   font-weight: bold;
+  margin-bottom: $global-margin;
   max-width: 180px;
   text-transform: uppercase;
   transition: color 200ms ease;
@@ -75,10 +77,11 @@
 }
 
 .pros--secteur {
+  text-align: center;
+
   a {
     color: inherit;
   }
-  text-align: center;
 
   &:nth-child(1) {
     color: color(palette, purple);
@@ -120,47 +123,21 @@
   }
 }
 
-.why {
-  color: $secondary-color;
-}
-
-.feature--wrapper {
-  @include flex-grid-row;
-  @include flex-align(spaced, middle);
-}
-.feature--column {
-  @include flex-grid-column(12);
-  @include breakpoint(medium) {
-    @include flex-grid-column(6);
-  }
-}
-
-.booster {
-
-  .section--title {
-
-    &:before {
-      display: none;
-    }
-  }
-
-  &:nth-child(2n + 2) {
-
-    .feature--column:first-child {
-      order: 1;
-    }
-  }
-}
-
 .home-galerie {
   background-image: url(../images/bg-gallery.svg);
-  background-size: 102%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: $white;
+
+  @include section-base;
 
   .section--title {
     color: inherit;
+  }
+
+  .columns {
+    padding-bottom: $global-padding;
   }
 
   .button {

@@ -12,8 +12,7 @@
   top: $top;
 }
 
-@mixin section-base($background: color(white)) {
-  $padding: $global-padding * 2;
+@mixin section-base($background: color(white), $padding: $global-padding * 2) {
   background-color: $background;
   padding: $padding 0;
   position: relative;
@@ -27,22 +26,26 @@
 
 @mixin section-wrapper() {
   @include flex-grid-row;
-  @include flex-align(center, middle);
+  @include flex-align(center, top);
 }
 
 @mixin section-contenu() {
   order: 1;
   text-align: justify;
-  @include flex-grid-column;
-  @include breakpoint(large) {
-    @include grid-col-size(6);
+  @include flex-grid-column(12);
+
+  &--with-thumbnail {
+    @include breakpoint(large) {
+      @include flex-grid-size(6);
+    }
   }
 }
 
 @mixin section-thumbnail($position: right) {
-  @include flex-grid-column;
+  order: 0;
+  @include flex-grid-column(12);
   @include breakpoint(large) {
-    @include grid-col-size(6);
+    @include flex-grid-size(6);
     @if $position == right {
       order: 0;
     } @else {
@@ -56,25 +59,24 @@
 }
 
 @mixin section-title($color: $color-primary, $font-size: rem-calc(30), $border: true) {
-  align-items: center;
   color: $color;
   display: flex;
   font-size: $font-size;
-
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 500;
-  text-align: left;
-
-  @if $border {
-
-    @include breakpoint(large) {
-      justify-content: space-between;
-      span {
-        display: block;
-        padding: 1em;
-        width: auto;
-      }
+  margin-bottom: $global-padding;
+  @include flex-align(center, middle);
+  svg {
+    margin-left: 1em;
+  }
+  span {
+    display: block;
+    padding: 0 1em;
+    width: auto;
+  }
+  @include breakpoint(large) {
+    @if $border {
 
       &:before, &:after {
         background: currentColor;

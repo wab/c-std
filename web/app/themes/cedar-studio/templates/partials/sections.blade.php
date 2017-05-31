@@ -20,11 +20,12 @@
             @endphp
             <img src="{{$thumb}}" alt="{{$alt}}">
           </div>
+          <div class="section-contenu section-contenu--with-thumbnail">
+        @else
+          <div class="section-contenu">
         @endif
-        <div class="section-contenu">
-
           @php(the_sub_field('content'))
-        </div>
+          </div>
     </div>
   </section>
   @endwhile
