@@ -23,7 +23,7 @@
           <article>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.9 171.6"><path d="M151.8 171.6H19.1c-1.4 0-2.5-1.1-2.5-2.5V84.6H2.5c-1 0-1.9-.6-2.3-1.6-.4-1-.2-2 .6-2.7L83.8.7c1-.9 2.5-.9 3.5 0l83 79.6c.7.7 1 1.8.6 2.7-.4.9-1.3 1.6-2.3 1.6h-14.1v84.5c-.2 1.4-1.3 2.5-2.7 2.5m-36.4-5h34V129h-34v37.6m-64.3 0h59.2V129H51.1v37.6m-14 0h9v-2.9h-9v2.9zm-15.5 0h10.5V129H21.6v37.6zm15.5-7.9h9v-4.2h-9v4.2zm0-9.2h9v-4.2h-9v4.2zm0-9.2h9v-4.2h-9v4.2zm0-9.1h9V129h-9v2.2zm75.8-7.2h36.5V84.6h-44.2V124h7.7m-21.7 0h9v-3h-9v3zm-24.8 0h19.8V84.6H66.4V124zm-17.8 0h12.7V84.6H21.6V124h27m42.6-8h9v-4.7h-9v4.7zm0-9.6h9v-4.7h-9v4.7zm0-9.7h9V92h-9v4.7zm0-9.7h9v-2.5h-9V87zm60.6-7.4h10.4l-26.9-25.8v25.8h16.5zm-49.1 0h27.7V49.1 49l-24.3-23.3H64.9L39.4 50.2v29.4h63.3zm-83.6 0h15.3V55L8.7 79.6h10.4zm51-58.9h30.8L85.5 6 70.1 20.7z"/></svg>
             <h3 class="title"><span>Plan 3d</span></h3>
-            <p class="price"><strong>100€</strong> <span>/ pièces *</span></p>
+            <p class="price"><strong>10€</strong> <span>/ pièce *</span></p>
             <h4 class="subtitle"><span>options</span></h4>
             <ul class="options">
               <li>Aménagement personnalisé : <strong>+ 5€ / pièce **</strong></li>
@@ -58,7 +58,7 @@
           </article>
           <article>
             <h3 class="title">Home staging</h3>
-            <p class="price"><strong>40€</strong> <span>/ image</span></p>
+            <p class="price"><strong>49€</strong> <span>/ image</span></p>
             <p>A partir d’une photo / Home Staging en 3D</p>
           </article>
         </div>
