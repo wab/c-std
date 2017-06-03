@@ -5,7 +5,7 @@
       <nav class="nav-footer scrollreveal">
         <ul class="no-bullet nav-footer--menu">
           <li class="nav-footer--item"><svg class="icon icon-info"><use xlink:href="#icon-info" /></svg> <a href="@php(the_permalink(1704))">Qui sommes-nous ?</a></li>
-          <li class="nav-footer--item"><svg class="icon icon-envelop"><use xlink:href="#icon-envelop" /></svg> <a href="@php(the_permalink(1704))">Contactez-nous</a></li>
+          <li class="nav-footer--item"><svg class="icon icon-envelop"><use xlink:href="#icon-envelop" /></svg> <a href="@php(the_permalink(20))">Contactez-nous</a></li>
         </ul>
       </nav>
     </div>
