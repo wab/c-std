@@ -3,7 +3,9 @@
   @while ( have_rows('section') ) @php(the_row())
   @php($image = get_sub_field('image'))
   <section class="section">
-    <h2 class="section-title"><span>@php(the_sub_field('title'))</span></h2>
+    @if(get_sub_field('title'))
+      <h2 class="section-title"><span>@php(the_sub_field('title'))</span></h2>
+    @endif
     <div class="section-wrapper">
         @if(!empty($image))
           <div class="section-thumbnail">
