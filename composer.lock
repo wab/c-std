@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f3c0dbae1e744930021446662e222aae",
-    "content-hash": "06657d80064de74d0c66754003730c5f",
+    "hash": "2752683839ca1bc1490742eafb9e0102",
+    "content-hash": "623a6268bae01fefdee1882ef12f9cca",
     "packages": [
         {
             "name": "composer/installers",
@@ -436,6 +436,20 @@
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/wab/acf-repeater/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "v1.0.12"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "toolbox-plugin/ninja-forms-uploads",
+            "version": "3.0.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/wab/ninja-forms-uploads/archive/master.zip",
                 "reference": null,
                 "shasum": null
             },
