@@ -80,7 +80,7 @@
       "type": "package",
       "package": {
         "name": "toolbox-plugin/ninja-forms-uploads",
-        "version": "3.0.6",
+        "version": "3.0.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -147,7 +147,7 @@
     "toolbox-plugin/acf-repeater":  "1.1.1",
     "toolbox-plugin/acf-flexible-content":  "1.1.1",
     "toolbox-plugin/acf-gallery":  "1.1.1",
-    "toolbox-plugin/ninja-forms-uploads":  "3.0.6",
+    "toolbox-plugin/ninja-forms-uploads":  "^3",
     "deliciousbrains/wp-migrate-db-pro": "*",
     "deliciousbrains/wp-migrate-db-pro-media-files": "*",
     "deliciousbrains/wp-migrate-db-pro-cli": "*",
@@ -161,10 +161,11 @@
     "wpackagist-plugin/google-sitemap-generator": "^4",
     "wpackagist-plugin/wordpress-seo": "^4",
     "wpackagist-plugin/breadcrumb-navxt": "^5",
-    "wpackagist-plugin/jetpack": "^4.8",
+    "wpackagist-plugin/jetpack": "^5",
     "wpackagist-plugin/vaultpress": "^1",
     "wpackagist-plugin/custom-post-type-ui": "^1.5",
-    "johnpbloch/wordpress": "^4.7"
+    "johnpbloch/wordpress": "^4.7",
+    "wpackagist-plugin/members": "^1.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
