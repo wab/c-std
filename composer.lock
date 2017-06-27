@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5a7abce625b3182214c997d041b969a3",
-    "content-hash": "98cc42166fdebfdce64bae71f11b9a85",
+    "hash": "0529bb8f833f4cf2ea8bc80274de10a9",
+    "content-hash": "4e5cbade2b9dc1991c2f21cada2e7fe1",
     "packages": [
         {
             "name": "composer/installers",
@@ -93,7 +93,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=1b0f680a-0bbb-4da6-bf8f-43d95035be1c&site_url=home-planner.fr",
@@ -446,7 +446,7 @@
         },
         {
             "name": "toolbox-plugin/ninja-forms-uploads",
-            "version": "3.0.7",
+            "version": "3.0.8",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/wab/ninja-forms-uploads/archive/master.zip",
@@ -590,16 +590,16 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.5.3"
+                "reference": "tags/1.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.3.zip",
-                "reference": "tags/1.5.3",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.4.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -670,16 +670,16 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.1.4",
+            "version": "3.1.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.1.4"
+                "reference": "tags/3.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.1.4.zip",
-                "reference": "tags/3.1.4",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.1.6.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
