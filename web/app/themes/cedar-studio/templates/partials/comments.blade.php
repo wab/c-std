@@ -3,7 +3,6 @@ if (post_password_required()) {
   return;
 }
 @endphp
-
 <section id="comments" class="comments">
   @if (have_comments())
     <h2>
