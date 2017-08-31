@@ -255,3 +255,22 @@
     transform: translateY(-7px) translateY(50%) rotate(45deg);
   }
 }
+
+.navigation {
+  @include breakpoint(large) {
+    margin-right: rem-calc(30);
+    position: relative;
+  }
+}
+
+.navigation-lang {
+  @extend .no-bullet;
+  margin-bottom: 0;
+  position: absolute;
+  top: rem-calc(28);
+  right: rem-calc(80);
+
+  @include breakpoint(large) {
+    right:  - rem-calc(30);
+  }
+}

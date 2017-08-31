@@ -126,7 +126,7 @@ function easy_excerpt($limit) {
     return $excerpt;
 }
 
-// Nzv menu wrapper
+// Nav menu wrapper
 function nav_menu_wrap() {
   // default value of 'items_wrap' is <ul id="%1$s" class="%2$s">%3$s</ul>'
 

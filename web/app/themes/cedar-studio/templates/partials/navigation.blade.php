@@ -12,4 +12,11 @@
     @if (has_nav_menu('primary_navigation'))
       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'items_wrap' => App\nav_menu_wrap(),  'menu_class' => 'navigation-menu']) !!}
     @endif
+
+    @if(function_exists('pll_the_languages'))
+      <!-- outputs a flags list (without languages names) -->
+      <ul class="navigation-lang">
+      @php(pll_the_languages( array( 'show_flags' => 1,'show_names' => 0 , 'hide_current' => 1) ))
+      </ul>
+    @endif
 </nav>

@@ -550,15 +550,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "2.9.3",
+            "version": "2.9.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/2.9.3"
+                "reference": "tags/2.9.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.2.9.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.2.9.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -690,15 +690,15 @@
         },
         {
             "name": "wpackagist-plugin/polylang",
-            "version": "2.2",
+            "version": "2.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/2.2"
+                "reference": "tags/2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.2.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -790,15 +790,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "5.3.2",
+            "version": "5.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/5.3.2"
+                "reference": "tags/5.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.3.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
