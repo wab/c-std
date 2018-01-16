@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Polylang - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-07-14 21:34:32+0000\n"
+"PO-Revision-Date: 2017-09-14 07:50:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,9 +15,9 @@ msgstr ""
 msgid "Tibet"
 msgstr "Tibet"
 
-#. #-#-#-#-#  polylang-code.pot (Polylang 2.2)  #-#-#-#-#
+#. #-#-#-#-#  polylang-code.pot (Polylang 2.2.8)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  polylang-code.pot (Polylang 2.2)  #-#-#-#-#
+#. #-#-#-#-#  polylang-code.pot (Polylang 2.2.8)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://polylang.pro"
 msgstr "https://polylang.pro"
@@ -95,15 +95,19 @@ msgstr "Permet de traduire les identifiants dans les urls des types de contenu p
 msgid "Translate slugs"
 msgstr "Traduction des identifiants"
 
+#: modules/share-slug/settings-share-slug.php:21
+msgid "Allows to share the same url slug across languages for posts and terms."
+msgstr "Permet de partager le même identifiant d’URL entre les langues pour les articles et termes."
+
 #: modules/share-slug/settings-share-slug.php:20
 msgid "Share slugs"
 msgstr "Partage des identifiants"
 
-#: install/plugin-updater.php:401
+#: install/plugin-updater.php:404
 msgid "Error"
 msgstr "Erreur"
 
-#: install/plugin-updater.php:401
+#: install/plugin-updater.php:404
 msgid "You do not have permission to install plugin updates"
 msgstr "Vous n’avez pas les droits suffisants pour installer les mises à jour de l’extension."
 
@@ -199,7 +203,7 @@ msgstr "Décidez à quoi vos adresses web vont ressembler."
 
 #: settings/settings-tools.php:34
 msgid "Remove all Polylang data when using the \"Delete\" link on the plugins screen."
-msgstr "Supprimer toutes les données de Polylang lorsque vous utilisez le lien \"Supprimer\" dans la liste des extensions."
+msgstr "Retirer toutes les données de Polylang lorsque vous utilisez le lien « Supprimer » sur l’écran des extensions."
 
 #: settings/settings-tools.php:21
 msgid "Decide whether to remove all data when deleting Polylang."
@@ -1242,11 +1246,11 @@ msgstr "Compatibilité avec WPML"
 msgid "Translation"
 msgstr "Traduction"
 
-#: admin/admin-static-pages.php:49
+#: admin/admin-static-pages.php:72
 msgid "Posts Page"
 msgstr "Page des articles"
 
-#: admin/admin-static-pages.php:45
+#: admin/admin-static-pages.php:68
 msgid "Front Page"
 msgstr "Page d&rsquo;accueil"
 
@@ -1860,27 +1864,27 @@ msgstr "Langue ajoutée."
 msgid "Impossible to add the language."
 msgstr "Impossible d’ajouter la langue."
 
-#: admin/admin-static-pages.php:104 admin/admin-static-pages.php:121
+#: admin/admin-static-pages.php:127 admin/admin-static-pages.php:144
 msgid "The chosen static front page must be translated in all languages."
 msgstr "La page d’accueil statique doit être traduite dans toutes les langues."
 
-#: admin/admin-filters.php:187
+#: admin/admin-filters.php:188
 msgid "Upgrading language files&#8230;"
 msgstr "Mise à jour des fichiers de langues&#8230;"
 
-#: admin/admin-filters.php:147
+#: admin/admin-filters.php:148
 msgid "WordPress default"
 msgstr "Langue par défaut de WordPress"
 
-#: admin/admin-filters.php:144
+#: admin/admin-filters.php:145
 msgid "Admin language"
 msgstr "Langue pour l&rsquo;interface d&rsquo;administration"
 
-#: admin/admin-filters.php:67 include/translated-post.php:99
+#: admin/admin-filters.php:68 include/translated-post.php:99
 msgid "All languages"
 msgstr "Toutes les langues"
 
-#: admin/admin-filters.php:64
+#: admin/admin-filters.php:65
 msgid "The widget is displayed for:"
 msgstr "Afficher le widget pour&nbsp;:"
 
@@ -1896,18 +1900,18 @@ msgstr "Définit la langue"
 msgid "Edit"
 msgstr "Modifier"
 
-#: admin/admin-filters-post.php:251
+#: admin/admin-filters-post.php:245
 msgid "(no parent)"
 msgstr "(pas de parent)"
 
 #: admin/admin-base.php:69 admin/admin-base.php:91
-#: admin/admin-filters-post.php:126 include/translated-post.php:97
+#: admin/admin-filters-post.php:125 include/translated-post.php:97
 #: settings/settings.php:114
 msgid "Languages"
 msgstr "Langues"
 
 #: admin/admin-filters-columns.php:187 admin/admin-filters-media.php:54
-#: admin/admin-filters-post.php:158 admin/admin-filters-term.php:87
+#: admin/admin-filters-post.php:152 admin/admin-filters-term.php:87
 #: admin/admin-filters-term.php:146 include/translated-post.php:98
 msgid "Language"
 msgstr "Langue"
